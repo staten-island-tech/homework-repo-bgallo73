@@ -210,3 +210,59 @@ todo.delete(); */
 // val = Math.floor(Math.random() * 20 + 1);
 
 // console.log(val);
+
+// HW 8
+
+
+// const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
+// const numbers = ['1', '2', '3', '4', '5', '6'];
+
+/* const a = alphabet[0];
+const b = alphabet[1]; */
+// const[a,, c, ...rest] = alphabet
+
+// const newArray = [...alphabet, ...numbers]
+
+// console.log(a);
+// console.log(c);
+// console.log(rest);
+// console.log(newArray)
+
+// function sumAndMultiply(a, b){
+//     return[a+b, a*b, /* a/b */]
+// }
+
+// const array = sumAndMultiply(4, 5)
+
+// console.log(array)
+// const [sum, multiply, division = 'No division'] = sumAndMultiply(4,5);
+
+// console.log(sum);
+// console.log(multiply);
+// console.log(division);
+
+const personOne = {
+    name: 'Kyle',
+    age: 24,
+    favoriteFood: 'rice',
+    address: {
+        city: 'somewhere',
+        state: 'one of them'
+
+    }
+}
+
+// const personTwo = {
+//     age: 32,
+//     favoriteFood: 'watermelon',
+// }
+
+// const personThree = {...personOne, ...personTwo}
+
+// // const {name: firstName, address: {city}} = personTwo;
+// console.log(personThree)
+function printUser({name, age, favoriteFood = 'watermelon'}) {
+    console.log(`Name is: ${name}. Age is ${age}. Favorite food is ${favoriteFood}`)
+}
+
+printUser(personOne)
